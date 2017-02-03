@@ -33,7 +33,7 @@ img {
   width: 16rem;
   overflow: auto;
   position: fixed;
-  top: 78%;
+  top: 76%;
   left: 3rem;
 }
 
@@ -82,9 +82,10 @@ img {
 
 .health-bar {
   margin: 0rem;
+  padding: 0.15rem;
   border-bottom: rgba(255, 255, 255, .8) 0.2rem solid;
   border-right: rgba(0, 247, 255, .5) 0.2rem solid;
-  border-radius: 10%;
+  border-radius: 7%;
   width: 10rem;
   float: left;
   margin-top: 0.1rem;
@@ -113,7 +114,7 @@ img {
 /* Right side */
 
 .inventory {
-  width: 30rem;
+  width: 25rem;
   position: fixed;
   bottom: 10%;
   right: 3%;
@@ -135,11 +136,34 @@ img {
   float: right;
 }
 
+.special-move_1 {
+  float: right;
+  width: calc(100% / 2 - 2.75rem);
+}
+
+.special-move_2 {
+  float: right;
+  width: calc(100% / 2 - 2.75rem);
+}
+
 .special-move__image {
   width: 3rem;
   margin: 0.5rem;
+  border: rgba(255, 255, 255, 0.8) 0.1rem solid;
   border-radius: 10%;
   background: rgba(255, 255, 255, .8);
+}
+
+.key-binding {
+  /*float: right;*/
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 1.5rem;
+  font-style: italic;
+  font-size: 0.4rem;
+  padding: 0.2rem;
+  padding-right: 0.27rem;
+  border: rgba(255, 255, 255, 0.8) 0.1rem solid;
+  border-radius: 15%;
 }
 
 .ammo-text {
@@ -180,7 +204,7 @@ img {
 .middle-text {
   margin: 0;
   position: fixed;
-  bottom: 30%;
+  bottom: 32%;
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center;
