@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: Ubuntu, sans-serif;
   margin: 0
 }
 
@@ -16,134 +16,183 @@ img {
   max-width: 100%
 }
 
- /* Layout */
 
- .section  {
-   margin: 0;
- }
+/* Layout */
 
- .section--bg-pic {
-   /*background: url('https://i.ytimg.com/vi/V4Jj-TCFS5g/maxresdefault.jpg');*/
-   height: 100vh;
-   /*width: 100%;*/
-   color: rgba(#fff,.5);
-   position: fixed;
- }
+.section {
+  margin: 0;
+}
 
- .character-stats {
-  width: 20rem;
+.section--bg-pic {
+  /*background: url('https://i.ytimg.com/vi/V4Jj-TCFS5g/maxresdefault.jpg');*/
+  min-width: 100%;
+  color: rgba(#fff, .5);
+}
+
+.character-stats {
+  width: 16rem;
   overflow: auto;
   position: fixed;
   top: 78%;
-  left: 5rem;
- }
+  left: 3rem;
+}
 
- .avatar {
- }
+.avatar {}
 
- .avatar__image {
-   float: left;
-   max-width: 4.5rem;
-   border: rgba(0,247,255,.32) solid 0.2rem;
-   border-radius: 30%;
- }
+.avatar__image {
+  float: left;
+  max-width: 4.5rem;
+  border: rgba(0, 247, 255, .32) solid 0.2rem;
+  border-radius: 30%;
+}
 
- .number-large {
-   font-style: italic;
-   font-size: 1.5rem;
-   color: rgba(255,255,255,.8);
-   margin-left: 1rem;
-   margin-right: .2rem;
-   margin-top: 1rem;
-   margin-bottom: 1rem;
-   float: left;
- }
- .number-slash {
-   font-style: italic;
-   font-size: 0.8rem;
-   color: rgba(0,247,255,.5);
-   margin-top: 1.6rem;
-   margin-bottom: 1rem;
-   float: left;
- }
- .number-small {
-   font-style: italic;
-   font-size: 0.8rem;
-   color: rgba(255,255,255,.8);
-   margin-top: 1.6rem;
-   margin-left: .1rem;
-   margin-bottom: 1rem;
-   float: left;
- }
+.health-text {
+  margin-left: 5.5rem;
+  margin-top: 0.8rem;
+}
 
- .inventory {
-   width: 20rem;
-   position: fixed;
-   top: 80%;
-   left: 70%
- }
+.health-text > * + * {
+  padding-top: 0.6rem;
+}
 
- .weapon {
-   margin: 0;
- }
-
- .weapon__image {
-   float: right;
-   width: 8rem;
-   margin: 0.5rem;
- }
-
-
- .special-move__image {
-   float: right;
-   max-width: 3rem;
-   margin: 0.5rem;
- }
-
- .skull-image {
-   width: 3rem;
-   position: fixed;
-   left: 50%;
-   bottom: 50%;
-   transform: translate(-50%, -25%);
- }
-
- .middle-text {
-   margin: 0;
-   position: fixed;
-   width: 30rem;
- }
-
- .reaper {
-   margin: 0;
-   position: fixed;
-   bottom: 40%;
-   left: 50%;
-
-   transform: translate(-50%, 0);
- }
- .reinhardt {
-   margin: 0;
-   position: fixed;
-   bottom: 30%;
-   left: 50%;
-
-   transform: translate(-50%, 0);
- }
- .eliminated {
+.number-large {
   font-style: italic;
   font-size: 1.5rem;
+  color: rgba(255, 255, 255, .8);
+  margin: 0;
+  margin-right: 0.5rem;
   float: left;
+}
+
+.number-slash {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: rgba(0, 247, 255, .5);
+  margin: 0;
+  float: left;
+}
+
+.number-small {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, .8);
+  margin: 0;
+  float: left;
+}
+
+.health-bar {
+  margin: 0rem;
+  border-bottom: rgba(255, 255, 255, .8) 0.2rem solid;
+  border-right: rgba(0, 247, 255, .5) 0.2rem solid;
+  border-radius: 10%;
+  width: 10rem;
+  float: left;
+  margin-top: 0.1rem;
+  margin-left: 0.5rem;
+}
+
+.white-bar {
+  display: inline-block;
+  width: 0.3rem;
+  height: 1.2rem;
+  background: rgba(255, 255, 255, .8);
+  border-radius: 10%;
+  border: rgba(255, 255, 255, .8) 0.1rem solid;
+}
+
+.yellow-bar {
+  display: inline-block;
+  width: 0.3rem;
+  height: 1.2rem;
+  background: rgba(255, 237, 0, .8);
+  border-radius: 10%;
+  border: rgba(255, 255, 255, 0.8) 0.1rem solid;
+}
+
+
+/* Right side */
+
+.inventory {
+  width: 30rem;
+  position: fixed;
+  bottom: 10%;
+  right: 3%;
+}
+
+.weapon {
+  margin: 0;
+  border-right: rgba(0, 247, 255, .5) 0.2rem solid;
+  border-radius: 10%;
+  float: right;
+}
+
+.weapon__image {
+  width: 8rem;
+  margin: 0.5rem;
+}
+
+.special-move {
+  float: right;
+}
+
+.special-move__image {
+  width: 3rem;
+  margin: 0.5rem;
+  border-radius: 10%;
+  background: rgba(255, 255, 255, .8);
+}
+
+.ammo-text {
+  margin-bottom: 4.7rem;
+}
+
+.ammo-large {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, .8);
+  margin-left: 1rem;
+  margin-right: .2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.2rem;
+  float: right;
+}
+
+.ammo-small {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, .8);
+  margin-top: 3.2rem;
+  margin-bottom: 0.2rem;
+  float: right;
+}
+
+
+/* Middle of Screen */
+
+.skull-image {
+  width: 3rem;
+  position: fixed;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -25%);
+}
+
+.middle-text {
+  margin: 0;
+  position: fixed;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.elimination {
+  font: 1.2rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   color: #fcfcfc;
- }
- .username {
-   font-style: italic;
-   font-size: 1.5rem;
-   float: left;
-   margin-left: 0.5rem;
-   margin-top: 0.5rem;
-   margin-bottom: 0.5rem;
-   color: #ff4d4d;
- }
+}
+
+.username {
+  color: #ff4d4d;
+}
