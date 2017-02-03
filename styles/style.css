@@ -1,0 +1,99 @@
+body {
+  font-family: sans-serif;
+  margin: 0
+}
+
+ul {
+  padding-left: 0rem;
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%
+}
+
+ /* Layout */
+
+ .section  {
+   margin: 0;
+ }
+
+ .section--bg-pic {
+   height: 100vh;
+   /*width: 100%;*/
+   color: rgba(#fff,.5);
+ }
+
+ .character-stats {
+  width: 20rem;
+  overflow: auto;
+  position: fixed;
+  top: 78%;
+  left: 5rem;
+ }
+
+ .avatar {
+ }
+
+ .avatar__image {
+   float: left;
+   max-width: 4.5rem;
+   border: rgba(0,247,255,.32) solid 0.2rem;
+   border-radius: 30%;
+ }
+
+ .number-large {
+   font-style: italic;
+   font-size: 1.5rem;
+   color: rgba(255,255,255,.8);
+   margin-left: 1rem;
+   margin-right: .2rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   float: left;
+ }
+ .number-slash {
+   font-style: italic;
+   font-size: 0.8rem;
+   color: rgba(0,247,255,.5);
+   margin-top: 1.6rem;
+   margin-bottom: 1rem;
+   float: left;
+ }
+ .number-small {
+   font-style: italic;
+   font-size: 0.8rem;
+   color: rgba(255,255,255,.8);
+   margin-top: 1.6rem;
+   margin-left: .1rem;
+   margin-bottom: 1rem;
+   float: left;
+ }
+
+ .inventory {
+   width: 20rem;
+   position: fixed;
+   top: 80%;
+   left: 70%
+ }
+
+ .weapon {
+   margin: 0;
+ }
+
+ .weapon__image {
+   float: right;
+   width: 8rem;
+   margin: 0.5rem;
+ }
+
+
+ .special-move__image {
+   float: right;
+   max-width: 3rem;
+   margin: 0.5rem;
+ }
