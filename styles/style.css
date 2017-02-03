@@ -23,9 +23,11 @@ img {
  }
 
  .section--bg-pic {
+   /*background: url('https://i.ytimg.com/vi/V4Jj-TCFS5g/maxresdefault.jpg');*/
    height: 100vh;
    /*width: 100%;*/
    color: rgba(#fff,.5);
+   position: fixed;
  }
 
  .character-stats {
@@ -96,4 +98,52 @@ img {
    float: right;
    max-width: 3rem;
    margin: 0.5rem;
+ }
+
+ .skull-image {
+   width: 3rem;
+   position: fixed;
+   left: 50%;
+   bottom: 50%;
+   transform: translate(-50%, -25%);
+ }
+
+ .middle-text {
+   margin: 0;
+   position: fixed;
+   width: 30rem;
+ }
+
+ .reaper {
+   margin: 0;
+   position: fixed;
+   bottom: 40%;
+   left: 50%;
+
+   transform: translate(-50%, 0);
+ }
+ .reinhardt {
+   margin: 0;
+   position: fixed;
+   bottom: 30%;
+   left: 50%;
+
+   transform: translate(-50%, 0);
+ }
+ .eliminated {
+  font-style: italic;
+  font-size: 1.5rem;
+  float: left;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #fcfcfc;
+ }
+ .username {
+   font-style: italic;
+   font-size: 1.5rem;
+   float: left;
+   margin-left: 0.5rem;
+   margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
+   color: #ff4d4d;
  }
