@@ -1,5 +1,6 @@
 body {
-  font-family: Ubuntu, sans-serif;
+  font-family: sans-serif;
+  font-style: italic;
   margin: 0
 }
 
@@ -27,20 +28,21 @@ strong {
 }
 
 .section--bg-pic {
-  /*background: url('https://i.ytimg.com/vi/V4Jj-TCFS5g/maxresdefault.jpg');*/
   min-width: 100%;
   color: rgba(#fff, .5);
 }
 
 .character-stats {
-  width: 16rem;
+  min-width: 15rem;
   overflow: auto;
   position: fixed;
   top: 76%;
   left: 3rem;
 }
 
-.avatar {}
+.avatar {
+  margin: 0;
+}
 
 .avatar__image {
   float: left;
@@ -59,21 +61,18 @@ strong {
 }
 
 .number-large {
-  font-style: italic;
   font-size: 1.5rem;
   color: rgba(255, 255, 255, .8);
   margin: 0;
   float: left;
 }
 .number-large2 {
-  font-style: italic;
   font-size: 1.5rem;
   color: rgba(255, 255, 255, .8);
   margin: 0;
 }
 
 .number-slash {
-  font-style: italic;
   font-size: 0.8rem;
   color: rgba(0, 247, 255, .5);
   margin: 0;
@@ -82,7 +81,6 @@ strong {
 }
 
 .number-small {
-  font-style: italic;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, .8);
   margin: 0;
@@ -164,10 +162,8 @@ strong {
 }
 
 .key-binding {
-  /*float: right;*/
   color: rgba(255, 255, 255, 0.8);
   margin-left: 1.5rem;
-  font-style: italic;
   font-size: 0.4rem;
   padding: 0.2rem;
   padding-right: 0.27rem;
@@ -180,7 +176,6 @@ strong {
 }
 
 .ammo-large {
-  font-style: italic;
   font-size: 1.5rem;
   color: rgba(255, 255, 255, .8);
   margin-left: 1rem;
@@ -191,7 +186,6 @@ strong {
 }
 
 .ammo-small {
-  font-style: italic;
   font-size: 0.8rem;
   color: rgba(255, 255, 255, .8);
   margin-top: 3.2rem;
@@ -221,14 +215,12 @@ strong {
 
 .elimination {
   font: 1.2rem;
-  font-style: italic;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   color: #fcfcfc;
 }
 
 .username {
-  font-style: italic;
   color: #ff4d4d;
 }
 
