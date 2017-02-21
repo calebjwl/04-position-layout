@@ -30,14 +30,15 @@ strong {
 .section--bg-pic {
   min-width: 100%;
   color: rgba(#fff, .5);
+  position: relative;
 }
 
 .character-stats {
   min-width: 15rem;
   overflow: auto;
-  position: fixed;
-  top: 76%;
-  left: 3rem;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
 }
 
 .avatar {
@@ -122,9 +123,9 @@ strong {
 
 .inventory {
   width: 25rem;
-  position: fixed;
+  position: absolute;
   bottom: 10%;
-  right: 3%;
+  right: 5%;
 }
 
 .weapon {
@@ -198,16 +199,16 @@ strong {
 
 .skull-image {
   width: 3rem;
-  position: fixed;
+  position: absolute;
   left: 50%;
   bottom: 50%;
-  transform: translate(-50%, -25%);
+  transform: translate(-50%, 50%);
 }
 
 .middle-text {
   margin: 0;
-  position: fixed;
-  bottom: 35%;
+  position: absolute;
+  bottom: 30%;
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center;
@@ -225,9 +226,9 @@ strong {
 }
 
 .super-move {
-  position: fixed;
+  position: absolute;
   left: 50%;
-  bottom: 25%;
+  bottom: 20%;
   transform: translate(-50%, 0);
 }
 
@@ -250,16 +251,13 @@ strong {
 .super-move_key {
   border: rgba(255, 255, 255, .8) 0.1rem solid;
   border-radius: 50%;
-  position: fixed;
+  position: absolute;
   left: 50%;
-  bottom: 20%;
+  bottom: 15%;
   transform: translate(-50%, 0);
 }
 
 .key-text {
-  margin-left: 0.4rem;
-  margin-right: 0.4rem;
-  margin-top: 0.2rem;
-  margin-bottom: 0.2rem;
+  margin: 0.2rem 0.4rem;
   color: rgba(255, 255, 255, .8);
 }
