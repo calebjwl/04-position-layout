@@ -1,0 +1,263 @@
+body {
+  font-family: sans-serif;
+  font-style: italic;
+  margin: 0
+}
+
+ul {
+  padding-left: 0rem;
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%
+}
+
+strong {
+  color: rgba(#fff, .5);
+}
+
+/* Layout */
+
+.section {
+  margin: 0;
+}
+
+.section--bg-pic {
+  min-width: 100%;
+  color: rgba(#fff, .5);
+  position: relative;
+}
+
+.character-stats {
+  min-width: 15rem;
+  overflow: auto;
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+
+.avatar {
+  margin: 0;
+}
+
+.avatar__image {
+  float: left;
+  max-width: 4.5rem;
+  border: rgba(0, 247, 255, .32) solid 0.2rem;
+  border-radius: 30%;
+}
+
+.health-text {
+  margin-left: 5.5rem;
+  margin-top: 0.8rem;
+}
+
+.health-text > * + * {
+  padding-top: 0.6rem;
+}
+
+.number-large {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, .8);
+  margin: 0;
+  float: left;
+}
+.number-large2 {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, .8);
+  margin: 0;
+}
+
+.number-slash {
+  font-size: 0.8rem;
+  color: rgba(0, 247, 255, .5);
+  margin: 0;
+  margin-left: 0.5rem;
+  float: left;
+}
+
+.number-small {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, .8);
+  margin: 0;
+  float: left;
+}
+
+.health-bar {
+  margin: 0rem;
+  padding: 0.15rem;
+  border-bottom: rgba(255, 255, 255, .8) 0.2rem solid;
+  border-right: rgba(0, 247, 255, .5) 0.2rem solid;
+  border-radius: 7%;
+  width: 10rem;
+  float: left;
+  margin-top: 0.1rem;
+  margin-left: 0.5rem;
+}
+
+.white-bar {
+  display: inline-block;
+  width: 0.3rem;
+  height: 1.2rem;
+  background: rgba(255, 255, 255, .8);
+  border-radius: 10%;
+  border: rgba(255, 255, 255, .8) 0.1rem solid;
+}
+
+.yellow-bar {
+  display: inline-block;
+  width: 0.3rem;
+  height: 1.2rem;
+  background: rgba(255, 237, 0, .8);
+  border-radius: 10%;
+  border: rgba(255, 255, 255, 0.8) 0.1rem solid;
+}
+
+
+/* Right side */
+
+.inventory {
+  width: 25rem;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+}
+
+.weapon {
+  margin: 0;
+  border-right: rgba(0, 247, 255, .5) 0.2rem solid;
+  border-radius: 10%;
+  float: right;
+}
+
+.weapon__image {
+  width: 8rem;
+  margin: 0.5rem;
+}
+
+.special-move {
+  float: right;
+}
+
+.special-move_1 {
+  float: right;
+  width: calc(100% / 2 - 2.75rem);
+}
+
+.special-move_2 {
+  float: right;
+  width: calc(100% / 2 - 2.75rem);
+}
+
+.special-move__image {
+  width: 3rem;
+  margin: 0.5rem;
+  border: rgba(255, 255, 255, 0.8) 0.1rem solid;
+  border-radius: 10%;
+  background: rgba(255, 255, 255, .8);
+}
+
+.key-binding {
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 1.5rem;
+  font-size: 0.4rem;
+  padding: 0.2rem;
+  padding-right: 0.27rem;
+  border: rgba(255, 255, 255, 0.8) 0.1rem solid;
+  border-radius: 15%;
+}
+
+.ammo-text {
+  margin-bottom: 4.7rem;
+}
+
+.ammo-large {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, .8);
+  margin-left: 1rem;
+  margin-right: .2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.2rem;
+  float: right;
+}
+
+.ammo-small {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, .8);
+  margin-top: 3.2rem;
+  margin-bottom: 0.2rem;
+  float: right;
+}
+
+
+/* Middle of Screen */
+
+.skull-image {
+  width: 3rem;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.middle-text {
+  margin: 0;
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.elimination {
+  font: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #fcfcfc;
+}
+
+.username {
+  color: #ff4d4d;
+}
+
+.super-move {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  transform: translate(-50%, 0);
+}
+
+.super-move_circle {
+  color: rgb(255,230,0);
+  border: rgb(255,230,0) 0.14rem solid;
+  border-radius: 100%;
+  border-style: dashed;
+}
+
+.super-move__percentage {
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  margin-left: 0.4rem;
+  margin-right: 0.2rem;
+}
+
+.super-move_key {
+  border: rgba(255, 255, 255, .8) 0.1rem solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translate(-50%, 0);
+}
+
+.key-text {
+  margin: 0.2rem 0.4rem;
+  color: rgba(255, 255, 255, .8);
+}
